@@ -300,6 +300,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
+    [self hideAnimated:YES];
     [self updatePlayButtonImage];
 }
 
