@@ -300,7 +300,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
-    self.audioFilePath = nil; // !!!: 再生が終ったら事を判別するため
     [self hideAnimated:YES]; // !!!: 再生が終ったらプレイヤーを閉じるため
     [self updatePlayButtonImage];
 }
