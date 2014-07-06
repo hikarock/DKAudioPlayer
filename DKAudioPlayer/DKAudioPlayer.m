@@ -317,4 +317,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     _bubbleView.hidden = ! isBubbleViewVisible;
 }
 
+- (BOOL)isVisible
+
 @end

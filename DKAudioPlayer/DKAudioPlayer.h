@@ -68,4 +68,6 @@
 
 - (void)hideAnimated:(BOOL)animated;
 
+- (BOOL)isVisible;
+
 @end
