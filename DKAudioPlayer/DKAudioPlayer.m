@@ -188,6 +188,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     if (! _audioPlayer.isPlaying) {
         [_audioPlayer play];
         self.isBubbleViewVisible = YES;
+        self.isPlaying = YES;
         [self updatePlayButtonImage];
     }
 }
@@ -197,6 +198,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
 {
     if (_audioPlayer.isPlaying) {
         [_audioPlayer pause];
+        self.isPlaying = NO;
         [self updatePlayButtonImage];
     }
 }

@@ -41,6 +41,7 @@
 @property (nonatomic, strong) NSString *audioFilePath;
 @property (nonatomic, strong) UIViewController *parentViewController;
 @property (nonatomic) BOOL isVisible;
+@property (nonatomic) BOOL isPlaying;
 
 // TODO: here are some problems with blinking of a bubble
 @property (nonatomic) BOOL isBubbleViewVisible;
